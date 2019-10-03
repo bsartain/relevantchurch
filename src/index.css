@@ -1,0 +1,703 @@
+html{
+    height: 100%;
+    background: #323232;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #bebdbd;
+    line-height: 1.3em;
+}
+
+a {
+    color: #caac5e;
+    text-decoration: none
+}
+
+a:hover {
+    color: #998246
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+
+h1, .h1 {
+    font-size: 36px;
+}
+
+h2, .h2 {
+    font-size: 28px;
+}
+
+h3, .h3 {
+    font-size: 21px;
+}
+
+h4, .h4 {
+    font-size: 14px;
+}
+
+.section-title{
+    text-align: center
+}
+
+.section-title h2{
+    display: inline-block;
+    padding: 12px;
+    margin-top: 0;
+    font-size: 22px;
+    border: 7px double #bebdbd;
+}
+
+.content-container{
+    z-index: 10
+}
+
+.content-container h1{
+    font-size: 100px;
+    margin: 0
+}
+
+.content-container h4{
+    font-size: 19px;
+    margin: 0
+}
+
+.content-container hr{
+    width: 30px
+}
+
+.content-container h4:first-child{
+    margin-bottom: 25px
+}
+
+.content-container h4:last-child{
+    margin-top: 25px
+}
+
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #323232;
+    opacity: 0.6;
+}
+
+.MuiAppBar-colorPrimary-12 {
+    color: #fff!important;
+    background-color: transparent!important;
+    transition: background 0.5s;
+}
+
+.MuiToolbar-dense-44 {
+    min-height: 65px!important;
+    background: transparent;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+.turn-icon-white{
+    background: #fff!important;
+    transition: background 0.5s;
+    color: #323232!important;
+}
+
+.app-bar-dynamic-transparent{
+    background: transparent!important;
+    box-shadow: none!important
+}
+
+.app-bar-dynamic-white{
+    background: #fff!important;
+    color: #323232!important;
+    box-shadow: none!important
+}
+
+.page-container-class{
+    height: 100%
+}
+
+.logo-grow{
+    flex-grow: 1
+}
+
+.container{
+    margin: 100px;
+}
+
+.container-single{
+    margin: 0 100px 100px 100px;
+}
+
+.container-single h2{
+    text-align: center;
+    margin-bottom: 30px
+}
+
+.top-level{
+    height: 100%
+}
+
+.top-level > div{
+    height: 100%
+}
+
+#root{
+    height: 100%
+}
+
+#root > div{
+    height: 100%
+}
+
+.image-container{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-container{
+    color: #fff;
+    text-align: center
+}
+
+/* Begin Spinner Styles */
+.spinner {
+    width: 40px;
+    height: 40px;
+  
+    position: relative;
+    margin: 180px auto;
+  }
+  
+  .double-bounce1, .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+  }
+  
+  .double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+
+  .spinner-background{
+    background: #caac5e;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+
+  .spinner-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .spinner-flex > div > h2{
+    margin-left: 60px;
+    margin-top: -173px;
+    width: 100px;
+    color: #fff
+  }
+  
+  @-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bounce {
+    0%, 100% { 
+      transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+    } 50% { 
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
+  }
+/* End Spinner Styles */
+
+.footer{
+    background: #caac5e;
+    color: #fff
+}
+
+.text-widget{
+    margin: 60px
+}
+
+.text-widget div{
+    margin-bottom: 20px;
+    font-size: 14px
+}
+
+.text-widget h5{
+    margin-bottom: 5px;
+    font-weight: bold
+}
+
+.sermon-card-title div span:first-child{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #d4d3d3;
+}
+
+.sermon-card-title div span:first-child{
+    font-size: 20px;
+    margin-bottom: 10px
+}
+
+.sermon-card-title div span:last-child{
+    color: #7F7F7F
+}
+
+.sermon-details{
+    padding: 0 24px 24px 0!important;
+    color: rgba(0, 0, 0, 0.54);
+    width: 100%;
+}
+
+.MuiPaper-elevation1-17{
+    box-shadow: none!important
+}
+
+.MuiPaper-elevation1-17{
+    padding-left: 0
+}
+
+.sermon-single-container-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    z-index: 10;
+    background-color: #fff;
+    height: 75%;
+    text-align: center;
+}
+
+.sermon-single-container-header > div:nth-child(2){
+    z-index: 1;
+}
+
+.sermon-single-container-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10%;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.sermon-single-container-content > div > div:nth-child(4){
+    margin: 30px 0;
+}
+
+.sermon-single-container-header img{
+    z-index: 10;
+    width: 700px;
+}
+
+.single-sermon-overlay{
+    position: absolute;
+    height: 75%;
+    width: 100%;
+    background: #323232;
+    opacity: 0.2;
+}
+
+.sermon-single-container{
+    margin: 50px;
+    width: 70%
+}
+
+.play-icon{
+    vertical-align: middle;
+    font-size: 55px;
+}
+
+.replay-icon{
+    font-size: 45px;
+    cursor: pointer
+}
+
+.icon-speaker{
+    display: flex;
+    flex-wrap: wrap
+}
+
+.icon-speaker div{
+    -webkit-flex: 1;  /* Safari 6.1+ */
+    -ms-flex: 1;  /* IE 10 */  
+    flex: 1;
+}
+
+.icon-speaker div h3{
+    text-transform: lowercase;
+    text-align: center
+}
+
+.play-icon{
+    cursor: pointer;
+}
+
+.SermonCard-card-233 {
+    min-height: 0
+}
+
+.MuiPaper-root-14 {
+    opacity: 0.95
+}
+
+.modalBody > div:nth-child(2) > div{
+    background: #323232!important;
+    color: #fff!important;
+}
+
+.modalBodyImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    z-index: 10;
+    background-color: #fff;
+    height: 75%;
+    text-align: center;
+}
+
+.modal-speaker-info h3{
+    text-transform: lowercase
+}
+
+.media-container{
+    display: flex;
+    margin: 100px;
+    justify-content: center;
+    align-items: center
+}
+
+.bla{
+    text-align: center
+}
+
+.media-container div{
+    text-align: center
+}
+
+.media-container h4{
+    color: #fff;
+}
+
+.second-controls > input[type="range"]:nth-child(2){
+    width: 60%;
+    margin: 0 10px
+}
+
+.second-controls i{
+    vertical-align: bottom
+}
+
+.second-controls > time:nth-child(3){
+    margin-right: 20px
+}
+
+.play-pause{
+    font-size: 70px;
+    cursor: pointer;
+    margin: 40px
+}
+
+.MuiSvgIcon-root-89 {
+    font-size: 45px!important
+}
+
+.nav-icons{
+    margin-right: 10px;
+    margin-top: 6px
+}
+
+.logo{
+    width: 150px
+}
+
+.logo-container-white{
+    background: url('./images/relevant-logo.png');
+    width:150px;
+    height: 35px;
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.logo-container-black{
+    background: url('./images/relevant-logo-black.png');
+    width:150px;
+    height: 35px;
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.nav-icons i{
+    color: #fff;
+    font-size: 33px;
+}
+
+.service-info{
+    background: #fff;
+    padding: 90px;
+    color: #6d6b6b;
+    text-align: center
+}
+
+.section-container{
+    display: flex;
+    width: 100%
+}
+
+.section-container div{
+    padding: 60px;
+}
+
+.section-1{
+    flex: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-2{
+    flex: 1
+}
+
+.section-class{
+    padding-bottom: 12px;
+    margin-top: -5px;
+}
+
+.donation-btn{
+    background: #caac5e!important;
+    color: #fff!important;
+    margin-right: 5px!important
+}
+
+.sermon-modal-close{
+    color: #fff!important
+}
+
+.bulletin-container{
+    margin: 75px 10px;
+    display: flex
+}
+
+.bulletin-container div{
+    margin: 2px
+ }
+
+.date-icon{
+    vertical-align: bottom;
+    margin-right: 5px
+}
+
+.give{
+    width: 100%;
+    cursor: pointer;
+}
+
+.event-details{
+    margin: 35px 0!important
+}
+
+.event-date{
+    color: #323232!important;
+    margin: 5px 0 5px 0
+}
+
+.card-container-flex{
+    display: flex
+}
+
+/* Date CSS */
+.date {
+	display: block;
+	width: 80px;
+	height: 110px;
+	background: #fff;
+	text-align: center;
+	font-family: 'Helvetica', sans-serif;
+	position: relative;
+}
+
+.date .binds {
+	position: absolute;
+	height: 15px;
+	width: 60px;
+	background: transparent;
+	border: 2px solid #999;
+	border-width: 0 5px;
+	top: -6px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.date .month {
+	background: #555;
+	display: block;
+	padding: 8px 0;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	border-bottom: 2px solid #333;
+	box-shadow: inset 0 -1px 0 0 #666;
+}
+
+.date .day {
+	display: block;
+	margin: 0;
+	padding: 10px 0;
+	font-size: 48px;
+	box-shadow: 0 0 3px #ccc;
+	position: relative;
+}
+
+.date .day::after {
+	content: '';
+	display: block;
+	height: 100%;
+	width: 96%;
+	position: absolute;
+	top: 3px;
+	left: 2%;
+	z-index: -1;
+	box-shadow: 0 0 3px #ccc;
+}
+
+.date .day::before {
+	content: '';
+	display: block;
+	height: 100%;
+	width: 90%;
+	position: absolute;
+	top: 6px;
+	left: 5%;
+	z-index: -1;
+	box-shadow: 0 0 3px #ccc;
+}
+
+.give-btn{
+    background: #caac5e!important;
+    color: #fff!important;
+    margin: 5px!important;
+}
+
+.give-btn:hover{
+    background: #c0a35a!important;
+}
+
+.give-btn-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center
+}
+
+.amount-input{
+    border: 1px solid #fff;
+}
+
+.amount-input label{
+    color: #ccc
+}
+
+@media (min-width: 600px){
+    .MuiCardHeader-root-222 {
+        padding-left: 0px!important;
+    }
+}
+
+
+@media (max-width: 600px){
+    .section-container{
+        flex-direction: column;
+    }
+    .section-1{
+        height: 400px
+    }
+    .section-2{
+        order: 1
+    }
+    .donation-btn{
+        width: 100%!important;
+        margin-bottom: 5px!important;
+        padding: 25px!important;
+        font-size: 18px!important
+    }
+}
+
+
+@media (max-width: 830px){
+    .sermon-single-container-header img{
+        width: 85%;
+    }
+
+    .sermon-single-container-header{
+        height: 50%
+    }
+
+    .single-sermon-overlay{
+        height: 50%
+    }
+
+    .sermon-single-container-content div h1 {
+        font-size: 40px;
+    }
+
+    .sermon-single-container-content div h3 {
+        text-transform: lowercase;
+        margin: 5px
+    }
+
+    .container-single{
+        margin: 20px
+    }
+
+    .media-container{
+        margin: 20px
+    }
+
+    .content-container h1{
+        font-size: 50px;
+        margin: 0
+    }
+
+    .container {
+        margin: 70px 20px 70px 20px;
+    }
+}
